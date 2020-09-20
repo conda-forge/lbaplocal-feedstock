@@ -24,6 +24,7 @@ requirements:
     - setuptools_scm
   run:
     - click
+    - consolemd
     - lbapcommon
     - lbdiracwrappers
     - lbenv
