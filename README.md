@@ -5,11 +5,11 @@ Home: https://gitlab.cern.ch/lhcb-dpa/analysis-productions/lbaplocal
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lbaplocal-feedstock/blob/master/LICENSE.txt)
 
 Summary: Tool to locally run tests for AnalysisProductions
 
-
+Development: https://gitlab.cern.ch/lhcb-dpa/analysis-productions/lbaplocal
 
 Current build status
 ====================
