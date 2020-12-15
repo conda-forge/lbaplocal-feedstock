@@ -25,7 +25,7 @@ requirements:
   run:
     - click
     - consolemd
-    - lbapcommon
+    - lbapcommon >=0.0.6
     - lbdiracwrappers
     - lbenv
     - python >=3.8
