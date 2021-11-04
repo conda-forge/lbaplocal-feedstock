@@ -1,5 +1,5 @@
-{% set name = "lbaplocal" %}
-{% set version = "0.1.0" %}
+{% set name = "LbAPLocal" %}
+{% set version = "0.2.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/LbAPLocal-{{ version }}.tar.gz
-  sha256: b9041918a399d7c23608988d815b41bb63c6068b79fac61e364f625c5416acc1
+  sha256: 8e42b0edec5bdedf416dc46dbb518ba6f925cd18dd0fdfaf7cbef8b71d4f0e5e
 
 build:
   number: 0
@@ -21,16 +21,17 @@ requirements:
   host:
     - pip
     - python >=3.8
-    - setuptools_scm
+    - setuptools-scm
   run:
     - click
     - consolemd
-    - lbapcommon >=0.2.0
+    - lbapcommon ~=0.5.0
     - lbdiracwrappers
     - lbenv
     - python >=3.8
     - requests
     - requests-kerberos
+    - setuptools
 
 test:
   imports:
