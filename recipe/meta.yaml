@@ -1,5 +1,5 @@
 {% set name = "LbAPLocal" %}
-{% set version = "0.2.5" %}
+{% set version = "0.2.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/LbAPLocal-{{ version }}.tar.gz
-  sha256: 92584ebd9966f9d9f0394dc62c27076590610648a6004f11e6466a1b20a58ffb
+  sha256: 723c2493520f945dae338c70c73abe909b108d4a9e06492d98cbd1dddbc51d96
 
 build:
   number: 0
