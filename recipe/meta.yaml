@@ -25,10 +25,10 @@ requirements:
   run:
     - click
     - consolemd
-    - lbapcommon ~=0.6.0
+    - lbapcommon ~=0.7.0
     - lbdiracwrappers
     - lbenv
-    - lbprodrun ~=1.1
+    - lbprodrun ~=1.2
     - mplhep
     - python >=3.9
     - requests
