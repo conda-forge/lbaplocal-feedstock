@@ -1,6 +1,5 @@
-{% set name = "LbAPLocal" %}
-{% set version = "0.4.0" %}
-
+{% set name = "lbaplocal" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,31 +7,31 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/LbAPLocal-{{ version }}.tar.gz
-  sha256: de31bd814397c95b8668bc26f2fa1ee2f727597b2531534f5d6670ca68166c73
+  sha256: 42af6915214665f70652d02114f0688cf7a937e8fe55d6873d42e94283f7ea95
 
 build:
-  number: 0
-  noarch: python
   entry_points:
     - lb-ap=LbAPLocal.cli:main
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - pip
     - python >=3.9
     - setuptools-scm
+    - pip
   run:
-    - click
-    - consolemd
-    - lbapcommon ~=0.7.0
-    - lbdiracwrappers
-    - lbenv
-    - lbprodrun ~=1.2
-    - mplhep
     - python >=3.9
-    - requests
     - setuptools
+    - consolemd
+    - click
+    - mplhep
+    - lbenv
+    - requests
+    - lbprodrun >=1.3,<2.dev0
+    - lbapcommon >=0.8.0,<0.9.dev0
+    - lbdiracwrappers
 
 test:
   imports:
