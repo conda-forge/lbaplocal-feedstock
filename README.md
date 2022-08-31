@@ -3,7 +3,7 @@ About lbaplocal
 
 Home: https://gitlab.cern.ch/lhcb-dpa/analysis-productions/lbaplocal
 
-Package license: MIT & GPL-3.0
+Package license: GPL-3.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lbaplocal-feedstock/blob/main/LICENSE.txt)
 
@@ -145,5 +145,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@AidanWiederhold](https://github.com/AidanWiederhold/)
 * [@chrisburr](https://github.com/chrisburr/)
 
