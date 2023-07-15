@@ -25,8 +25,8 @@ requirements:
     - python >=3.9
     - click
     - consolemd
-    - lbapcommon >=0.9.1,<0.10.dev0
-    - apd >=0.4.0,<0.5.dev0
+    - lbapcommon >=0.10,<0.11.dev0
+    - apd >=0.6.0,<0.7.dev0
     - lbenv
     - lbdiracwrappers
     - requests
