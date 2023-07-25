@@ -3,9 +3,9 @@ About lbaplocal-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lbaplocal-feedstock/blob/main/LICENSE.txt)
 
-Home: https://gitlab.cern.ch/lhcb-dpa/analysis-productions/lbaplocal
 
-Package license: GPL-3.0-or-later
+
+Package license: GPL-3.0
 
 Summary: Tool to locally run tests for AnalysisProductions
 
@@ -145,6 +145,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@AidanWiederhold](https://github.com/AidanWiederhold/)
 * [@chrisburr](https://github.com/chrisburr/)
 
