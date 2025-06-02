@@ -1,20 +1,20 @@
 {% set name = "lbaplocal" %}
-{% set version = "0.7.5" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/LbAPLocal-{{ version }}.tar.gz
-  sha256: 76f6d83e6ddea5f3e54b17aadef3e0066cadc39bf5a4de880202f22d1675b0b0
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 6a3a6c4cf24f762ea79d782f58b2d6d8f71617559548bd7f3ae45e7dbff3ef56
 
 build:
   entry_points:
     - lb-ap = LbAPLocal.cli:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
