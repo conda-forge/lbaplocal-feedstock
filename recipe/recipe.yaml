@@ -41,16 +41,11 @@ requirements:
     - setuptools
 
 tests:
-  - python:
-      imports:
-        - LbAPLocal
-  - requirements:
-      run:
-        - pip
-        - python ${{ python_min }}.*
-    script:
-      - pip check
-      - lb-ap --help
+- python:
+    python_version: ["${{python_min}}.*", "*"]
+    imports:
+    - LbAPLocal
+    pip_check: true
 
 about:
   summary: Tool to locally run tests for AnalysisProductions
