@@ -32,6 +32,8 @@ requirements:
     - python >=${{ python_min }}
     - lbapcommon >=0.15.10
     - dirac-cwl >=1.1.1
+    - textual
+    - textual-plotext
     - lbdiracwrappers
     - lbenv
     - lbprodrun >=1.12.2,<2.dev0
@@ -44,7 +46,7 @@ requirements:
 
 tests:
 - python:
-    python_version: ["${{python_min}}.*", "*"]
+    python_version: ["${{ python_min }}.*", "*"]
     imports:
     - LbAPLocal
     pip_check: true
