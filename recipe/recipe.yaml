@@ -14,7 +14,7 @@ source:
   sha256: ed1f5b857783942b010e5321a0c1d03a99d13e72d13df43503e0fc04894d3e8e
 
 build:
-  number: 2 # increase number to catch dirac-cwl 1.1.2
+  number: 2 # catch dirac-cwl 1.1.2
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
   python:
