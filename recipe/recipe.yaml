@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: lbaplocal
-  version: "0.9.2"
+  version: "0.9.4"
   python_min: "3.12"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/lbaplocal-${{ version }}.tar.gz
-  sha256: 78e8ae7b4668dfbe2935a29d7845b8bf0f6e7d45ddf840159360b831763fbc50
+  sha256: a3494e444a8b15bc8121db92ebe233ba353cf5be359cc95bdf43231db4659f4e
 
 build:
   number: 0
@@ -43,6 +43,8 @@ requirements:
     - mplhep
     - requests
     - setuptools
+    - nodejs
+    - quickjs
 
 tests:
 - python:
