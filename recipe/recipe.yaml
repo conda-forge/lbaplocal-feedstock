@@ -14,7 +14,7 @@ source:
   sha256: eb06ca220fa5560b846334208f2df407bbbc149a68dfad522f9a4c180b2cb2ff
 
 build:
-  number: 0
+  number: 1 # added prmon
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
   python:
@@ -45,6 +45,7 @@ requirements:
     - setuptools
     - nodejs
     - quickjs
+    - prmon
 
 tests:
 - python:
