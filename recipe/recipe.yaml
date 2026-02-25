@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: lbaplocal
-  version: "0.9.9"
+  version: "0.9.10"
   python_min: "3.12"
 
 package:
@@ -10,8 +10,8 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/48/f3/b0ce253c5b31f740ca9ba55ae7c4096aa82322eca0d9cd7a158bc1508fc9/lbaplocal-${{ version }}.tar.gz
-  sha256: 79899d99f74844eb85a44adfd1caa175927f3f093060e78a5b5cf4d8e2541786
+  url: https://files.pythonhosted.org/packages/6f/85/67bf4411c931d15b5cf2d6a72ecd67ec0e41c7cf374b32c49a276b8c417e/lbaplocal-${{ version }}.tar.gz
+  sha256: 9b23b5adb2df63e80ac3f19d3d3b0559952d6ed24e7f4e7bd08080b1cb6ebc4f
 
 build:
   number: 1 # added prmon
