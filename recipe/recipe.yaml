@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: lbaplocal
-  version: "0.9.10"
+  version: "0.9.11"
   python_min: "3.12"
 
 package:
@@ -10,11 +10,11 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/6f/85/67bf4411c931d15b5cf2d6a72ecd67ec0e41c7cf374b32c49a276b8c417e/lbaplocal-${{ version }}.tar.gz
-  sha256: 9b23b5adb2df63e80ac3f19d3d3b0559952d6ed24e7f4e7bd08080b1cb6ebc4f
+  url: https://files.pythonhosted.org/packages/18/13/a03126c1686c781097cd307e87061b777dda45e37e901e61b0815a2ca7ae/lbaplocal-${{ version }}.tar.gz
+  sha256: a6abf7c37790f218457f9c5864f16f3d3f8d2fccdd11a1bb8e23c307ec961c82
 
 build:
-  number: 1 # added prmon
+  number: 0 # added prmon
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
   python:
@@ -48,11 +48,11 @@ requirements:
     - prmon
 
 tests:
-- python:
-    python_version: ["${{ python_min }}.*", "*"]
-    imports:
-    - LbAPLocal
-    pip_check: true
+  - python:
+      python_version: ["${{ python_min }}.*", "*"]
+      imports:
+        - LbAPLocal
+      pip_check: true
 
 about:
   summary: Tool to locally run tests for AnalysisProductions
