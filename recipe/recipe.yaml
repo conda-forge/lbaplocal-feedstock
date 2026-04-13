@@ -46,6 +46,7 @@ requirements:
     - nodejs
     - quickjs
     - prmon
+    - questionary
 
 tests:
   - python:
