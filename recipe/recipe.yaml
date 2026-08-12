@@ -10,7 +10,7 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/38/22/a931a73a747a9a86ac7c97775056e235457c2131664ba2cfab0c8925e6fb/lbaplocal-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
   sha256: 895408d89fe2f322bda8d9af6e99b061b2eb646fa00fe1537d7b67365cb4d3bd
 
 build:
