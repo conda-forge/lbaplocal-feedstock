@@ -194,6 +194,3 @@ Feedstock Maintainers
 * [@chrisburr](https://github.com/chrisburr/)
 * [@ryuwd](https://github.com/ryuwd/)
 
-
-<!-- dummy commit to enable rerendering -->
-
