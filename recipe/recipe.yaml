@@ -31,7 +31,6 @@ requirements:
   run:
     - python >=${{ python_min }}
     - lbapcommon >=0.15.11
-    - dirac-cwl >=1.1.3
     - textual
     - textual-plotext
     - lbdiracwrappers
