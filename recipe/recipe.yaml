@@ -46,6 +46,9 @@ requirements:
     - quickjs
     - prmon
     - questionary
+    # Temporary: conda-forge's schema-salad 8.10.20260825112551 pins mistune <3.3 but its
+    # wheel metadata requires >=3.3, so `pip check` fails. Drop once the feedstock is fixed.
+    - schema-salad !=8.10.20260825112551
 
 tests:
   - python:
