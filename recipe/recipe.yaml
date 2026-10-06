@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: lbaplocal
-  version: "0.15.0"
+  version: "0.16.1"
   python_min: "3.12"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 70fb44e731f1aae2e22613649e30b8584febe27e6ec3efd33631726ce025082f
+  sha256: 0babe3fb73ad757537d8f058d6cc44afd4861083bcb439890e34176a21068b7a
 
 build:
   number: 0 # added prmon
