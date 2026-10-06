@@ -21,6 +21,8 @@ build:
     entry_points:
       - lb-ap = LbAPLocal.cli.main:app
       - lb-ap-legacy = LbAPLocal.cli.legacy:main
+      - lb-ap-run-app = LbAPLocal.cwl.app_runner:main
+      - lb-ap-cwl-run = LbAPLocal.cwl.runner:app
 
 requirements:
   host:
@@ -30,25 +32,29 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - lbapcommon >=0.15.11
-    - textual
-    - textual-plotext
+    - lbapcommon >=0.19.0
+    - lbprodrun >1.12.2,<2.dev0
+    - cwltool >=3.1.20260108
+    - cwl-utils >=0.41
     - lbdiracwrappers
     - lbenv
-    - lbprodrun >=1.12.2,<2.dev0
     - apd >=0.6.0
     - click
-    - consolemd
     - mplhep
     - requests
     - setuptools
+    - packaging
+    - typer
+    - rich
+    - textual
+    - textual-plotext
+    - prompt-toolkit
+    - questionary
+    # Not Python dependencies: qjs (node as fallback) evaluates CWL expressions,
+    # and prmon is run by `lb-prod-run --prmon`.
     - nodejs
     - quickjs
     - prmon
-    - questionary
-    # Temporary: conda-forge's schema-salad 8.10.20260825112551 pins mistune <3.3 but its
-    # wheel metadata requires >=3.3, so `pip check` fails. Drop once the feedstock is fixed.
-    - schema-salad !=8.10.20260825112551
 
 tests:
   - python:
