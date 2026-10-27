@@ -30,7 +30,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - lbapcommon >=0.15.11
+    - lbapcommon >=0.19.0
     - textual
     - textual-plotext
     - lbdiracwrappers
@@ -41,6 +41,13 @@ requirements:
     - consolemd
     - mplhep
     - requests
+    - pyyaml
+    - packaging
+    - typer
+    - rich
+    - prompt-toolkit
+    - cwltool >=3.1.20260108
+    - cwl-utils >=0.41
     - setuptools
     - nodejs
     - quickjs
